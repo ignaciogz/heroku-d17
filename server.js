@@ -19,7 +19,7 @@ const MongoStore = require('connect-mongo');
 const cluster = require('cluster');
 const CPUS = require('os').cpus();
 
-const serverMw = require('./utils/middlewares/serverMw');
+const serverMw = require('./utils/middlewares/ServerMw');
 const { errorLog: loggerWinston } = require("./utils/loggers/winston");
 
 app.use(express.json());
